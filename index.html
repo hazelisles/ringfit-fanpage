@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Hazel Chu">
+  <title>ICS 118 MidTermProject</title>
+  <link rel="stylesheet" type="text/css" href="style/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&family=Open+Sans:wght@600&family=Roboto&family=Ubuntu&family=Irish+Grover&display=swap" rel="stylesheet">
+  
+</head>
+<body>
+  <!-- nav bar and logo -->
+  <div class="nav">
+    <div class="logo">
+      <img src="images/ringlogo.png" id="logo">
+    </div>
+    <div class="menugroup">
+      <label for="toggle">&#9776;</label>
+      <input type="checkbox" id="toggle" />
+        <div class="menu">
+          <a href="#video">Home</a>  
+          <a href="#facts">3 Modes</a>  
+          <a href="#info">The Adventure</a>  
+          <a href="#signup" class="green">Sign Up</a>  
+        </div> 
+    </div>
+  </div>
+  <!-- section 1: video section -->
+  <section id="video">
+    <video muted loop autoplay class="video">
+      <source src="video/video1.mp4" type="video/mp4">
+    </video>
+    <header>
+      <h1>
+        RING FIT 
+      </h1>
+      <h1>
+        ADVENTURE
+      </h1>
+      <h1>
+        FAN PAGE
+      </h1>
+    </header>
+  </section>
+  <!-- section 2: 3 facts section -->
+  <section id="facts">
+    <div class="row">
+      <div class="mode">
+        <img id="adven" src="images/adventure.gif" alt="adventure">
+        <h3>Adventure Mode</h3>
+        <p>Explore more than 100 levels in over 20 vibrant worlds in your quest to defeat a bodybuilding dragon and his minions using real-life exercises!</p>
+      </div>
+      <div class="mode">
+        <img id="quick" src="images/quick.JPG" alt="quickplay">
+        <h3>Quick Play</h3>
+        <p>Want to get moving right away? Quick Play offers challenges and 12 minigames that are ready when the game starts, so you can jump into a quick workout whenever you want!</p>
+      </div>
+      <div class="mode">
+        <img id="custom" src="images/custom.JPG" alt="custom">
+        <h3>Custom Workouts</h3>
+        <p>You can create customizable workout routines, mixing exercises and minigames that can target specific muscle groups.</p>
+      </div>
+    </div>
+  </section>
+  <!-- section 3: information section -->
+  <section id="info">
+    <div class="info">
+      <h2>The Adventure</h2>
+      <div class="textgroup">
+        <p>Ring Fit Adventure is an exercising action role-playing game developed and published by Nintendo for the Nintendo
+        Switch, released at 2019. The game comes with two physical components: the Ring-Con, a Pilates ring that the user holds and one Joy-Con slots into, and a Leg Strap, a piece of fabric affixed to the user's leg that holds the other Joy-Con.</p>
+        <h3>More Adventure to Explore!</h3>
+        <p>You can also just using the RING exercise on your own.
+        Grab your Ring-Con accessory and go for an off-screen adventure! Press and pull the Ring-Con to gain reps that you can sync with your game later.</p>
+        <p>Rhythm game mode offer 12 music tracks. You can use the RING playing rhythm game. Enjoying nice nintendo Game Songs while training your arms! Switch to freedom jogging option, jogging without the battling in the adventure mode.</p>
+      </div>
+    </div>
+  </section>
+  <!-- section 4: sign up section -->
+  <section id="signup">
+    <div class="videocontainer">
+      <video id="video2" class="video" muted loop autoplay>
+        <source src="video/video1.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="form">
+      <h2>Love Adventure?</h2>
+      <h3>Sign Up for our eNewsletter!</h3>
+      <form class="input">
+        <input type="text" name="name" id="name" placeholder="FULL NAME">
+        <input type="email" name="email" id="email" placeholder="EMAIL">
+        <button type="submit">SIGN UP</button>
+      </form>
+    </div>
+  </section>
+  <script>
+    var vid = document.getElementById("video2");
+    vid.playbackRate = 0.7;
+  </script>
+</body>
+</html>
